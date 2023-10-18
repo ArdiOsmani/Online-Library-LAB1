@@ -1,0 +1,111 @@
+create database EmployeeDB
+
+create table dbo.Employee(
+EmployeeId int identity (1,1),
+EmployeeName varchar(500),
+Department varchar(500),
+DateOfJoining date,
+PhotoFileName varchar(500)
+)
+
+create table dbo.Department(
+DepartmentId int identity(1,1),
+DepartmentName varchar(500)
+)
+
+create table dbo.Book(
+BookId int identity (1,1),
+BookName varchar(500),
+BookAuthor varchar(500),
+publishDate date,
+PhotoFileName varchar(500),
+Genre varchar(100)
+)
+
+create table dbo.Abonuesi(
+AbonuesiId int identity(1,1),
+fullName varchar(500),
+Shkollimi varchar(500),
+DateOfJoining date,
+VitiLindjes varchar(500),
+Vendbanimi varchar(100)
+)
+
+create table dbo.Kujdestaria(
+KujdestariaID int identity(1,1),
+dita varchar(255),
+nderrimi varchar(255),
+orari_Nga varchar(255),
+orari_Deri varchar(255)
+
+)
+
+create table dbo.KutiaAnkesa(
+KutiaAnkesaId int identity (1,1),
+Titulli varchar(200),
+AnkesaData varchar(500)
+)
+
+create table dbo.AudioBooks(
+AudioBooksId int identity (1,1),
+AudioBooksName varchar(500),
+AudioBooksAuthor varchar(500),
+publishDate date,
+PhotoFileName varchar(500),
+Genre varchar(100)
+)
+
+create table dbo.Kryesori(
+KryesoriId int identity (1,1),
+KryesoriName varchar(500),
+nrLeternjoftim int,
+DateOfJoining date,
+PhotoFileName varchar(500)
+)
+
+create table dbo.Huazimi
+(
+HuazimiId int identity (1,1),
+BookName varchar (500),
+Huazuesi varchar (500),
+HuazimiDate date,
+ReturnDate date
+)
+
+create table dbo.Orariipunes(
+OrariipunesId int identity(1,1),
+EmployeeName varchar(500),
+Fillimi varchar(300),
+Mbarimi varchar(300),
+pushimi varchar(300)
+)
+
+
+create table dbo.Rezervimi(
+RezervimId int identity(1,1),
+fullName varchar(500),
+DataeRezervimit date,
+Tavolina varchar(300)
+)
+
+
+create table dbo.Tavolina(
+TavolinaId int identity(1,1),
+Salla varchar(300),
+NriTavolines varchar(300)
+)
+
+create table dbo.Orari(
+OrariId int identity(1,1),
+FullName varchar(300),
+Pushimi date
+)
+
+create table dbo.Donuesi(
+DonuesiId int identity(1,1),
+fullName varchar(500),
+EmriLibrat varchar (500),
+Vendbanimi varchar (500),
+nrLeternjoftim int,
+DitaEDorzimit date
+)
